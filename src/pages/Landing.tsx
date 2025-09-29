@@ -199,17 +199,7 @@ export default function Landing() {
       {/* Footer */}
       <footer className="bg-black border-t-4 border-white p-6 mt-20">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-white font-bold">
-            Built with ❤️ by{" "}
-            <a
-              href="https://vly.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-yellow-400 underline hover:text-yellow-300 transition-colors"
-            >
-              vly.ai
-            </a>
-          </p>
+          <p className="text-white font-bold">Built with ❤️</p>
         </div>
       </footer>
     </motion.div>
