@@ -49,7 +49,8 @@ createRoot(document.getElementById("root")!).render(
           <RouteSyncer />
           <Routes>
             <Route path="/" element={<Landing />} />
-            <Route path="/auth" element={<AuthPage redirectAfterAuth="/" />} /> {/* TODO: change redirect after auth to correct page */}
+            <Route path="/auth" element={<AuthPage redirectAfterAuth="/dashboard" />} />
+            <Route path="/dashboard" element={<Landing />} /> {/* Temporary redirect to landing */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
