@@ -6,12 +6,11 @@ import {
 } from "@/components/ui/collapsible";
 import {
   DialogContent,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Dialog } from "@radix-ui/react-dialog";
-import { ChevronDown, ExternalLink } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 type SyncError = {
@@ -72,8 +71,7 @@ function ErrorDialog({
         <DialogHeader>
           <DialogTitle>Runtime Error</DialogTitle>
         </DialogHeader>
-        A runtime error occurred. Open the vly editor to automatically debug the
-        error.
+        An error occurred while running the app. Check the details below to help debug.
         <div className="mt-4">
           <Collapsible>
             <CollapsibleTrigger>
@@ -88,16 +86,6 @@ function ErrorDialog({
             </CollapsibleContent>
           </Collapsible>
         </div>
-        <DialogFooter>
-          <a
-            href={`https://vly.ai/project/${import.meta.env.VITE_VLY_APP_ID}`}
-            target="_blank"
-          >
-            <Button>
-              <ExternalLink /> Open editor
-            </Button>
-          </a>
-        </DialogFooter>
       </DialogContent>
     </Dialog>
   );
