@@ -123,4 +123,16 @@
   [role="button"]:not([disabled]) {
     cursor: pointer;
   }
+  a[href*="vly.ai"],
+  [data-vly],
+  #vly-toolbar,
+  [id*="vly-toolbar"],
+  [class*="vly-toolbar"],
+  a[href*="vly.ai"][style*="position:fixed"],
+  [class*="vly"][style*="position:fixed"],
+  [id*="vly"][style*="position:fixed"] {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
 }
